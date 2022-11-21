@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTE ÉTUDIANT</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Tahoma, sans-serif
+        }
+        
+        #boite1
+        {
+            width: 800px;
+            height: 600px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(82, 95, 139);
+            text-align: center;
+        }
+
+        body 
+        {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #boite2 
+        {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            border: 5px rgb(155, 120, 101) solid;
+            border-radius: 0px 150px 0px 150px ;
+            padding: 10px;
+        }
+
+        header
+        {
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #logo 
+        {
+            height: 50px;
+            width: 100px;
+        }
+
+        #groupe-titre 
+        {
+            margin-left: 3px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        h1 
+        {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        span
+        {
+            font-size: 10px;
+        }
+
+        #profil 
+        {
+            align-self: center;
+        }
+        #profil img
+        {
+            height: 200px;
+            width: 200px;
+        }
+        #boite3 
+        {
+            position: relative;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        th 
+        {
+            text-align: left;
+        }
+
+        td 
+        {
+            text-align: right;
+        }
+
+        #mes-infos 
+        {
+            position: relative;
+        }
+
+        table::before 
+        {
+            content: "";
+            background-image: url('logo-UVS.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.1;
+        }
+
+        #boite4
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        #sign, h5
+        {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="boite1">
+        <div id="boite2">
+            <header>
+                <img src="logo-UVS.jpg" alt="logo" id="logo">
+                <div id="groupe-titre">
+                    <h1>CARTE ÉTUDIANT</h1>
+                    <span>UNIVERSITÉ VIRTUELLE DU SÉNÉGAL</span>
+                </div>
+            </header>
+            <div id="boite3">
+                <div id="profil">
+                    <img src="2md.png" alt="2md">
+                </div>
+                <div id="mes-infos">
+                    <table  cellspacing="15">
+                        <tr>
+                            <th scope="col">FILIÈRE</th>
+                            <td>MIL</td>
+                        </tr>                    
+                        <tr>
+                            <th scope="col">INE</th>
+                            <td>N00471720151</td>
+                        </tr>                    <tr>
+                            <th scope="col">PRÉNOM (S)</th>
+                            <td>2M</td>
+                        </tr>                    
+                        <tr>
+                            <th scope="col">NOM</th>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">DATE DE NAISSANCE</th>
+                            <td>30/08/1993</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">LIEU DE NAISSANCE</th>
+                            <td>KAOLACK</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">NATIONALITÉ</th>
+                            <td>SÉNÉGALAISE</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">EMAIL</th>
+                            <td>mouhamedm.diouf@uvs.edu.sn</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">DATE DE DÉLIVRANCE</th>
+                            <td>18 Septembre 2022</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="boite4">
+                <h5>Signature</h5>
+                <img src="sign.PNG" alt="signature" id="sign">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
